@@ -1,6 +1,3 @@
-from city_functions import city_country
-
 def test_city_country():
-    """Test basic city, country format."""
-    result = city_country('santiago', 'chile')
-    assert result == 'Santiago, Chile'
+    result = city_country('santiago', 'chile', 5000000)
+    assert result == 'Santiago, Chile – population 5000000'
